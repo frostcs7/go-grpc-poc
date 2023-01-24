@@ -1,4 +1,4 @@
-module go-grpc-poc
+module github.com/frostcs7/go-grpc-poc
 
 go 1.19
 
