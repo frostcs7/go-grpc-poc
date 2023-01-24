@@ -15,6 +15,8 @@ func TestServer_SayHello(t *testing.T) {
 		context context.Context
 		in      *pb.HelloRequest
 	}
+
+	// set up test cases
 	tests := []struct {
 		name    string
 		fields  fields
