@@ -16,3 +16,5 @@ To list all the service definitions:
 To send request:
 `grpCurl --plaintext -d '{"name": "sandeep"}' localhost:50051 protos.HelloWorld/SayHello`
 
+### Unit test
+`go test ./...`

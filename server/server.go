@@ -1,3 +1,4 @@
+// Package main implements a server for HelloWorld service.
 package main
 
 import (
@@ -14,14 +15,17 @@ const (
 	grpcPort = ":50051"
 )
 
+// Server is used to implement gen.protos.HelloWorldServer
 type Server struct {
 	pb.UnsafeHelloWorldServer
 }
 
+// SayHello implements gen.protos.HelloWorldServer
 func (s *Server) SayHello(context context.Context, in *pb.HelloRequest) (*pb.HelloResponse, error) {
 	log.Printf("Recieve the message from client: %s", in.Name)
 	return &pb.HelloResponse{Message: "Hello " + in.Name}, nil
 }
+
 func main() {
 	listen, err := net.Listen("tcp", grpcPort)
 	if err != nil {
