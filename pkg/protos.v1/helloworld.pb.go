@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        (unknown)
-// source: protos.v1/helloworld.proto
+// source: protos/helloworld.proto
 
 package __
 
@@ -149,12 +149,12 @@ func file_protos_v1_helloworld_proto_rawDescGZIP() []byte {
 
 var file_protos_v1_helloworld_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_protos_v1_helloworld_proto_goTypes = []interface{}{
-	(*HelloRequest)(nil),  // 0: protos.v1.HelloRequest
-	(*HelloResponse)(nil), // 1: protos.v1.HelloResponse
+	(*HelloRequest)(nil),  // 0: protos.HelloRequest
+	(*HelloResponse)(nil), // 1: protos.HelloResponse
 }
 var file_protos_v1_helloworld_proto_depIdxs = []int32{
-	0, // 0: protos.v1.HelloWorld.SayHello:input_type -> protos.v1.HelloRequest
-	1, // 1: protos.v1.HelloWorld.SayHello:output_type -> protos.v1.HelloResponse
+	0, // 0: protos.HelloWorld.SayHello:input_type -> protos.HelloRequest
+	1, // 1: protos.HelloWorld.SayHello:output_type -> protos.HelloResponse
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
