@@ -1,11 +1,11 @@
 syntax = "proto3";
-package protos;
+package protos.v1;
 
 option go_package = ".";
 
 // The HelloWorld service definition.
 service HelloWorld {
-  rpc SayHello (HelloRequest) returns (HelloResponse) {}
+  rpc SayHello(HelloRequest) returns (HelloResponse) {}
 }
 
 // The request message containing the user's name.

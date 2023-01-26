@@ -15,12 +15,12 @@ const (
 	grpcPort = ":50051"
 )
 
-// Server is used to implement gen.protos.HelloWorldServer
+// Server is used to implement gen.protos.v1.HelloWorldServer
 type Server struct {
 	pb.UnsafeHelloWorldServer
 }
 
-// SayHello implements gen.protos.HelloWorldServer
+// SayHello implements gen.protos.v1.HelloWorldServer
 func (s *Server) SayHello(context context.Context, in *pb.HelloRequest) (*pb.HelloResponse, error) {
 	log.Printf("Recieve the message from client: %s", in.Name)
 	return &pb.HelloResponse{Message: "Hello " + in.Name}, nil
