@@ -33,6 +33,7 @@ func main() {
 	grpcServer := grpc.NewServer()
 	pb.RegisterHelloWorldServer(grpcServer, &s)
 	reflection.Register(grpcServer)
+	log.Println("Starting gRPC Server!")
 	if err := grpcServer.Serve(listen); err != nil {
 		log.Fatalf("failed to serve grpc at %v %v", grpcPort, err)
 	}
